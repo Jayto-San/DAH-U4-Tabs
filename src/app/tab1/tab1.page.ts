@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Estudiante } from '../model/estudiante';
 import { EstudianteService} from '../services/estudiante.service';
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
