@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="success">
     <ion-title>
-      Estudiantes Activos
+      Estudiantes No activos
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,12 +17,12 @@
           </ion-item-option>
         </ion-item-options>
 
-        <ion-item *ngIf = "student.active==true">
+        <ion-item *ngIf = "student.active==false">
           <ion-label>
             <h2>
               <strong>{{student.name}}</strong>
-              <ion-chip color="secondary" *ngIf="student.active" class="ion-float-right">
-                <ion-label>Activo</ion-label>
+              <ion-chip color="danger" *ngIf="!student.active" class="ion-float-right">
+                <ion-label>Inactivo</ion-label>
               </ion-chip>
             </h2>
             <h3>{{student.controlnumber}}</h3>
